@@ -1,0 +1,139 @@
+/* Site-Portail/css/style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Fond de secours noir si l'image rate */
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    border: 3px solid #ff6600;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+h1 {
+    color: #ff6600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 20px 0 5px 0;
+}
+
+.subtitle {
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    display: block;
+}
+
+.card:hover {
+    border-color: #ff6600;
+    background: rgba(255, 102, 0, 0.2);
+}
+
+.card h2 {
+    margin: 0;
+    color: #ff6600;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* ... garde le début de ton CSS pour le body et le logo ... */
+
+.grid {
+    display: grid;
+    /* 2 colonnes égales sur écran normal */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    width: 90%;
+    max-width: 800px; /* On élargit un peu pour les 2 colonnes */
+    margin: 30px auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover {
+    border-color: #ff6600; /* Ton Orange Signature */
+    background: rgba(255, 102, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin: 0;
+    color: #ff6600;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 5px 0 0 0;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* --- RESPONSIVE : 1 colonne sur téléphone --- */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr; /* Passage à 1 seule colonne */
+        max-width: 400px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ... reste du footer ... */
