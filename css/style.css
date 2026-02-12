@@ -1,10 +1,12 @@
-/* Site-Portail/css/style.css */
+/* ==========================================================================
+   GLOBAL
+   ========================================================================== */
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Fond de secours noir si l'image rate */
+    background-color: #1a1a1a;
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -39,56 +41,16 @@ h1 {
     margin-bottom: 40px;
 }
 
-.grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 90%;
-    max-width: 500px;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    padding: 20px 30px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-    display: block;
-}
-
-.card:hover {
-    border-color: #ff6600;
-    background: rgba(255, 102, 0, 0.2);
-}
-
-.card h2 {
-    margin: 0;
-    color: #ff6600;
-}
-
-.footer {
-    margin-top: auto;
-    padding: 40px;
-    text-align: center;
-}
-
-.footer a {
-    color: #ff6600;
-    text-decoration: none;
-    font-weight: bold;
-}
-/* ... garde le début de ton CSS pour le body et le logo ... */
+/* ==========================================================================
+   GRID (PAGE D’ACCUEIL)
+   ========================================================================== */
 
 .grid {
     display: grid;
-    /* 2 colonnes égales sur écran normal */
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 90%;
-    max-width: 800px; /* On élargit un peu pour les 2 colonnes */
+    max-width: 800px;
     margin: 30px auto;
 }
 
@@ -107,7 +69,7 @@ h1 {
 }
 
 .card:hover {
-    border-color: #ff6600; /* Ton Orange Signature */
+    border-color: #ff6600;
     background: rgba(255, 102, 0, 0.1);
     transform: translateY(-5px);
 }
@@ -124,16 +86,99 @@ h1 {
     opacity: 0.7;
 }
 
-/* --- RESPONSIVE : 1 colonne sur téléphone --- */
+/* Responsive */
 @media (max-width: 600px) {
     .grid {
-        grid-template-columns: 1fr; /* Passage à 1 seule colonne */
+        grid-template-columns: 1fr;
         max-width: 400px;
     }
-    
+
     h1 {
         font-size: 1.8rem;
     }
 }
 
-/* ... reste du footer ... */
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+    margin-top: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   PAGES LÉGALES & CONTACT
+   ========================================================================== */
+
+.orange-text {
+    color: #ff6600 !important;
+}
+
+/* Conteneur légal */
+.legal-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    color: white;
+}
+
+.legal-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.legal-section {
+    margin-top: 25px;
+}
+
+.legal-section h3 {
+    margin: 0 0 8px 0;
+    color: #ff6600;
+}
+
+/* Contact */
+.contact-card {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 35px;
+}
+
+.contact-logo {
+    width: 120px !important;
+    height: 120px !important;
+    margin-bottom: 20px;
+}
+
+.btn-envelope {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+}
+
+/* ==========================================================================
+   HOVER ANIMATION (BOUTONS & LIENS)
+   ========================================================================== */
+
+a {
+    transition: all 0.25s ease;
+}
+
+a:hover {
+    background-color: #ff7f2a !important;
+    color: white !important;
+    transform: scale(1.05);
+}
