@@ -1,8 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://contactnowone-dev.github.io/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <priority>1.0</priority>
-  </url>
+   
+   <url>
+      <loc>https://contactnowone-dev.github.io/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/pc-ai-expert/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/mon-guide-solaire/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/maison-securisee/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/Projet_affli/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/Gaming/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/Auditorium/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/le-chef-nowone/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/force/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://contactnowone-dev.github.io/tech-futur/</loc>
+      <lastmod>2026-02-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
 </urlset>
